@@ -38,6 +38,11 @@ Tags: framework, boilerplate, html5, h5bp, initializr, skeleton
     left: 7.6%;
 }
 
+/* header */
+h1.title a {
+    color: white;
+}
+
 /* Suckerfish dropdowns */
 
 header #access {
@@ -96,4 +101,8 @@ header #access ul ul.sub-menu {
     font-weight: bold;
 }
 
+/* Sidebar */
+.main aside {
+    clear: right;
+}
 
