@@ -1,0 +1,99 @@
+/*
+Theme Name: Initializr Adaptive
+Theme URI: http://wordpress.org/extend/initializr
+Author: aendrew @ Graphic Alliance
+Author URI: http://graphicalliance.co.uk
+Description: Built on Initializr HTML5 boilerplate (http://www.initializr.com) by Jonathan Verrecchia, this is a totally barebones template to modify to your heart's content.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: framework, boilerplate, html5, h5bp, initializr, skeleton
+*/
+
+/* There isn't really actually anything in here. All the Initializr CSS is in
+ * the initializr_adaptive/css directory. Particularly important is main.css.
+ * 
+ * This file is primarily changes to the default Initializr boilerplate to
+ * make it work better with WordPress. For instance, Initializr has no code 
+ * for suckerfish dropdowns, which WordPress uses for its navigation.
+ * 
+ */
+
+/* Assistive text */
+.assistive-text {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    color: #1982d1;
+    clip: auto !important;
+    font-size: 12px;
+    position: absolute;
+    text-decoration: underline;
+    top: 0;
+    left: 7.6%;
+}
+
+/* Suckerfish dropdowns */
+
+header #access {
+    width: 50%;   
+}
+
+header #access ul li {
+    position: relative;
+    display: block;
+}
+
+header #access ul li a {
+    width: auto;
+}
+
+header #access ul ul.sub-menu {
+    display: none;    
+    float: left;
+    -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    display: none;
+    float: left;
+    margin: 0;
+    position: absolute;
+    top: 3.333em;
+    left: 80px;
+    width: auto;
+    z-index: 99999;    
+}
+
+#access ul ul a {
+    background: #f9f9f9;
+    border-bottom: 1px dotted #ddd;
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    height: auto;
+    line-height: 1.4em;
+    padding: 10px 10px;
+    width: 168px;
+}
+
+#access ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+#access ul li:hover > ul {
+    display: block;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+    font-weight: bold;
+}
+
+
